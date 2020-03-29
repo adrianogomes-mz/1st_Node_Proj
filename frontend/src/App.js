@@ -1,26 +1,41 @@
+//import React, {useState} from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+import './global.css';
+
+//import Logon from './pages/Logon';
+
+//Routes é componente
+import Routes from './routes';
+import { Route } from 'react-router-dom';
+
+//Quando html está dentro de js chama-se JSX - JavaScript XML. Componente é uma função que retorna html
 function App() {
+  //Implementando Estado, Variável que vai guardar dados e renderizar na pág
+  //const [counter, setCounter] = useState(0);
+
+  //useState retorna um array com 2 posições. Array[valor, funcaoAtualizacao]
+
+ // function increment() {
+ //   setCounter(counter + 1);
+
+    //console.log(counter);
+ // }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.<br></br>
-          <p>Desenvolvido por: .:GOMEZ:.</p>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  //<Header>
+  //  Semana Omnistack
+  //</Header>
+
+  //<div>
+ //   <Header> Contador: {counter} </Header>
+ //   <button onClick = {increment}> Incrementar </button>
+ // </div>
+
+ //<Logon />
+
+ <Routes />
   );
 }
 
